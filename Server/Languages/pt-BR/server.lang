@@ -1,0 +1,5 @@
+items.Bench_Armory_Crystal_Glow.name = Bigorna de Cristal
+items.Bench_Armory_Crystal_Glow.description = Uma bigorna de cristal para forjar armas de cristal.
+benchCategories.crystal_glow_sword = Espada de Cristal
+items.Weapon_Sword_Crystal_Glow.name = Espada de Cristal
+items.Weapon_Sword_Crystal_Glow.description = Uma lâmina forjada de cristal encantado. Irradia um brilho azul suave.

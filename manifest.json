@@ -1,0 +1,17 @@
+{
+  "Group": "HytaleModdingManual",
+  "Name": "CreateACraftingBench",
+  "Version": "1.1.0",
+  "Description": "Crystal Anvil crafting bench with Crystal Sword recipe — extends the weapon tutorial",
+  "Authors": [
+    {
+      "Name": "HytaleModdingManual"
+    }
+  ],
+  "Dependencies": {
+    "HytaleModdingManual:CreateACustomBlock": "1.0.0",
+    "HytaleModdingManual:CreateACustomTree": "1.0.0"
+  },
+  "OptionalDependencies": {},
+  "IncludesAssetPack": true
+}

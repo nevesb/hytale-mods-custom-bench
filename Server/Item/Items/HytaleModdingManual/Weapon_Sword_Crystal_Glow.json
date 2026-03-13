@@ -1,0 +1,150 @@
+{
+  "Parent": "Template_Weapon_Sword",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Sword_Crystal_Glow.name",
+    "Description": "server.items.Weapon_Sword_Crystal_Glow.description"
+  },
+  "Model": "Items/Weapons/Crystal/Weapon_Sword_Crystal_Glow.blockymodel",
+  "Texture": "Items/Weapons/Crystal/Weapon_Sword_Crystal_Glow.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Sword_Crystal_Glow.png",
+  "Quality": "Rare",
+  "ItemLevel": 35,
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Sword"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      0,
+      180,
+      45
+    ],
+    "Translation": [
+      -23,
+      -23
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 12
+            }
+          }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 12
+            }
+          }
+        }
+      ]
+    },
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 22
+            }
+          }
+        }
+      ]
+    },
+    "Thrust_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 32
+            }
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Spin_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 23
+            }
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Stab_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 70
+            }
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 8,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 5.0,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ItemId": "Ore_Crystal_Glow",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Wood_Enchanted_Trunk",
+        "Quantity": 50
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 10
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Crystal_Glow_Sword"
+        ],
+        "Id": "Armory_Crystal_Glow"
+      }
+    ]
+  },
+  "Light": {
+    "Radius": 2,
+    "Color": "#468"
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.18
+}

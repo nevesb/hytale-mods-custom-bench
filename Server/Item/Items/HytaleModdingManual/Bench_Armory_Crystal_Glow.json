@@ -1,0 +1,120 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Bench_Armory_Crystal_Glow.name",
+    "Description": "server.items.Bench_Armory_Crystal_Glow.description"
+  },
+  "Quality": "Rare",
+  "Icon": "Icons/ItemsGenerated/Bench_Armory_Crystal_Glow.png",
+  "Categories": [
+    "Furniture.Benches"
+  ],
+  "Recipe": {
+    "TimeSeconds": 10.0,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ItemId": "Ore_Crystal_Glow",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Wood_Enchanted_Trunk",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Bar_Gold",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Crafting"
+        ],
+        "Id": "Workbench",
+        "RequiredTierLevel": 2
+      }
+    ]
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/HytaleModdingManual/Armory_Crystal_Glow.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/HytaleModdingManual/Armory_Crystal_Glow.png",
+        "Weight": 1
+      }
+    ],
+    "VariantRotation": "NESW",
+    "HitboxType": "Bench_Weapon",
+    "State": {
+      "Id": "crafting",
+      "Definitions": {
+        "CraftCompleted": {
+          "Looping": true
+        },
+        "CraftCompletedInstant": {}
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches",
+        "ItemId": "Bench_Armory_Crystal_Glow"
+      }
+    },
+    "Light": {
+      "Color": "#88ccff"
+    },
+    "Bench": {
+      "Type": "Crafting",
+      "LocalOpenSoundEventId": "SFX_Weapon_Bench_Open",
+      "LocalCloseSoundEventId": "SFX_Weapon_Bench_Close",
+      "CompletedSoundEventId": "SFX_Weapon_Bench_Craft",
+      "Id": "Armory_Crystal_Glow",
+      "Categories": [
+        {
+          "Id": "Crystal_Glow_Sword",
+          "Name": "server.benchCategories.crystal_glow_sword",
+          "Icon": "Icons/CraftingCategories/Armory/Sword.png"
+        }
+      ],
+      "TierLevels": [
+        {
+          "CraftingTimeReductionModifier": 0.0
+        }
+      ]
+    },
+    "BlockSoundSetId": "Crystal",
+    "ParticleColor": "#88ccff",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockParticleSetId": "Crystal"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      13,
+      -14
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Bench"
+    ]
+  },
+  "MaxStack": 1,
+  "ItemSoundSetId": "ISS_Items_Gems"
+}

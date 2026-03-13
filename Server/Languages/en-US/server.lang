@@ -1,0 +1,5 @@
+items.Bench_Armory_Crystal_Glow.name = Crystal Anvil
+items.Bench_Armory_Crystal_Glow.description = A crystal anvil for forging crystal weapons.
+benchCategories.crystal_glow_sword = Crystal Sword
+items.Weapon_Sword_Crystal_Glow.name = Crystal Sword
+items.Weapon_Sword_Crystal_Glow.description = A blade forged from enchanted crystal. Radiates a soft blue glow.
