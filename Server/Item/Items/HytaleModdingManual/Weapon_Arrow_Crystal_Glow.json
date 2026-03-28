@@ -1,0 +1,71 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Arrow_Crystal_Glow.name",
+    "Description": "server.items.Weapon_Arrow_Crystal_Glow.description"
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "Quality": "Uncommon",
+  "ItemLevel": 25,
+  "PlayerAnimationsId": "Dagger",
+  "Recipe": {
+    "TimeSeconds": 5.0,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ItemId": "Plant_Fruit_Enchanted",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ore_Crystal_Glow",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Weapon_Arrow_Crude",
+        "Quantity": 10
+      }
+    ],
+    "OutputQuantity": 50,
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Crystal_Glow"
+        ],
+        "Id": "Armory_Crystal_Glow"
+      }
+    ]
+  },
+  "Model": "Items/Projectiles/Ice_Bolt.blockymodel",
+  "Texture": "Items/Projectiles/Ice_Bolt_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Arrow_Crystal_Glow.png",
+  "IconProperties": {
+    "Scale": 0.8,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      0,
+      0
+    ]
+  },
+  "MaxStack": 100,
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Arrow"
+    ]
+  },
+  "Weapon": {},
+  "Light": {
+    "Radius": 1,
+    "Color": "#88ccff"
+  },
+  "ItemSoundSetId": "ISS_Items_Gems"
+}

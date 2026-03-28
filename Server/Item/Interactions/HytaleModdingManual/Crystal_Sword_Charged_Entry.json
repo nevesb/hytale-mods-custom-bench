@@ -1,0 +1,35 @@
+{
+  "Type": "ModifyInventory",
+  "ItemToRemove": {
+    "Id": "Weapon_Arrow_Crystal_Glow",
+    "Quantity": 1
+  },
+  "AdjustHeldItemDurability": -0.3,
+  "Next": {
+    "Type": "Parallel",
+    "Interactions": [
+      {
+        "Interactions": [
+          "Weapon_Sword_Primary_Thrust_Force",
+          "Weapon_Sword_Primary_Thrust_Selector"
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "RunTime": 0
+          },
+          "Crystal_Sword_Shoot_Bolt"
+        ]
+      }
+    ]
+  },
+  "Failed": {
+    "Type": "Serial",
+    "Interactions": [
+      "Weapon_Sword_Primary_Thrust_Force",
+      "Weapon_Sword_Primary_Thrust_Selector"
+    ]
+  }
+}

@@ -20,14 +20,19 @@
   "IconProperties": {
     "Scale": 0.5,
     "Rotation": [
-      0,
-      180,
-      45
+      45,
+      105,
+      0
     ],
     "Translation": [
-      -23,
-      -23
+      -16,
+      -16
     ]
+  },
+  "Interactions": {
+    "Primary": "Root_Weapon_Sword_Primary",
+    "Secondary": "Root_Weapon_Sword_Secondary_Guard",
+    "Ability1": "Crystal_Sword_Special"
   },
   "InteractionVars": {
     "Swing_Left_Damage": {
@@ -72,10 +77,16 @@
           "Parent": "Weapon_Sword_Primary_Thrust_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 32
+              "Physical": 20,
+              "Crystal_Light": 12
             }
           }
         }
+      ]
+    },
+    "Thrust_Stamina": {
+      "Interactions": [
+        "Crystal_Sword_Charge"
       ]
     },
     "Vortexstrike_Spin_Damage": {
@@ -84,7 +95,7 @@
           "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 23
+              "Crystal_Light": 23
             }
           }
         }
@@ -96,7 +107,7 @@
           "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 70
+              "Crystal_Light": 70
             }
           }
         }
@@ -113,6 +124,49 @@
         }
       ]
     }
+  },
+  "Weapon": {
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ],
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "Amount": 20,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "ItemAppearanceConditions": {
+    "SignatureEnergy": [
+      {
+        "Condition": [
+          100,
+          100
+        ],
+        "ConditionValueType": "Percent",
+        "Particles": [
+          {
+            "SystemId": "Sword_Signature_Ready",
+            "TargetNodeName": "blade",
+            "TargetEntityPart": "PrimaryItem",
+            "RotationOffset": {
+              "Roll": 90
+            }
+          },
+          {
+            "SystemId": "Sword_Signature_Status",
+            "TargetNodeName": "blade",
+            "TargetEntityPart": "PrimaryItem",
+            "Scale": 1.3,
+            "RotationOffset": {
+              "Roll": 90
+            }
+          }
+        ]
+      }
+    ]
   },
   "Recipe": {
     "TimeSeconds": 5.0,
@@ -135,7 +189,7 @@
       {
         "Type": "Crafting",
         "Categories": [
-          "Crystal_Glow_Sword"
+          "Crystal_Glow"
         ],
         "Id": "Armory_Crystal_Glow"
       }
@@ -143,7 +197,7 @@
   },
   "Light": {
     "Radius": 2,
-    "Color": "#468"
+    "Color": "#88ccff"
   },
   "MaxDurability": 150,
   "DurabilityLossOnHit": 0.18

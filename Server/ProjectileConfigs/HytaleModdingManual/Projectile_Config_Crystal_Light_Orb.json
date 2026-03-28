@@ -1,0 +1,30 @@
+{
+  "Parent": "Projectile_Config_Arrow_Base",
+  "Model": "Ice_Ball",
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 3,
+    "TerminalVelocityAir": 45,
+    "TerminalVelocityWater": 10,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0.0,
+    "SticksVertically": false
+  },
+  "LaunchForce": 35,
+  "LaunchLocalSoundEventId": "SFX_Ice_Ball_Death",
+  "LaunchWorldSoundEventId": "SFX_Ice_Ball_Death",
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        "Crystal_Light_Orb_Damage",
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Common_Projectile_Miss",
+        "Common_Projectile_Despawn"
+      ]
+    }
+  }
+}

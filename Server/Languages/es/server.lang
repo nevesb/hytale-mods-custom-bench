@@ -1,5 +1,7 @@
 items.Bench_Armory_Crystal_Glow.name = Yunque de Cristal
 items.Bench_Armory_Crystal_Glow.description = Un yunque de cristal para forjar armas de cristal.
-benchCategories.crystal_glow_sword = Espada de Cristal
+benchCategories.crystal_glow = Luz de Cristal
 items.Weapon_Sword_Crystal_Glow.name = Espada de Cristal
-items.Weapon_Sword_Crystal_Glow.description = Una espada forjada de cristal encantado. Irradia un brillo azul suave.
+items.Weapon_Sword_Crystal_Glow.description = Una espada forjada de cristal encantado. Los ataques cargados consumen Cargas de Luz para disparar rayos de cristal. Irradia un brillo azul suave.
+items.Weapon_Arrow_Crystal_Glow.name = Carga de Luz
+items.Weapon_Arrow_Crystal_Glow.description = Energia de luz cristalizada. Consumida por la Espada de Cristal para ataques a distancia.

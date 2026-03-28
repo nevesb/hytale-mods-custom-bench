@@ -1,0 +1,35 @@
+{
+  "Parent": "Projectile_Config_Arrow_Base",
+  "Model": "Ice_Bolt",
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 2,
+    "TerminalVelocityAir": 60,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0.0,
+    "SticksVertically": false
+  },
+  "LaunchForce": 55,
+  "SpawnOffset": {
+    "X": 0.3,
+    "Y": -0.3,
+    "Z": 1.5
+  },
+  "LaunchLocalSoundEventId": "SFX_Ice_Bolt_Death",
+  "LaunchWorldSoundEventId": "SFX_Ice_Bolt_Death",
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        "Crystal_Light_Bolt_Damage",
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Common_Projectile_Miss",
+        "Common_Projectile_Despawn"
+      ]
+    }
+  }
+}

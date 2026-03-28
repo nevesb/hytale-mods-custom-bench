@@ -75,8 +75,8 @@
       "Id": "Armory_Crystal_Glow",
       "Categories": [
         {
-          "Id": "Crystal_Glow_Sword",
-          "Name": "server.benchCategories.crystal_glow_sword",
+          "Id": "Crystal_Glow",
+          "Name": "server.benchCategories.crystal_glow",
           "Icon": "Icons/CraftingCategories/Armory/Sword.png"
         }
       ],

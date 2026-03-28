@@ -1,0 +1,53 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "SignatureEnergy": 100
+  },
+  "ValueType": "Percent",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "Parallel",
+        "Interactions": [
+          {
+            "Interactions": [
+              {
+                "Type": "Simple",
+                "RunTime": 0.4,
+                "Effects": {
+                  "ItemPlayerAnimationsId": "Sword",
+                  "ItemAnimationId": "Thrust",
+                  "ClearAnimationOnFinish": true,
+                  "Particles": [
+                    {
+                      "SystemId": "IceBall",
+                      "TargetNodeName": "Handle",
+                      "PositionOffset": {
+                        "X": 1.0,
+                        "Y": 0,
+                        "Z": 0
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "Interactions": [
+              "Crystal_Sword_Shoot_Orb"
+            ]
+          }
+        ]
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "SignatureEnergy": -100
+        },
+        "ValueType": "Percent"
+      }
+    ]
+  }
+}

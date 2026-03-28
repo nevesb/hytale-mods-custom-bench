@@ -1,8 +1,8 @@
 {
   "Group": "HytaleModdingManual",
   "Name": "CreateACraftingBench",
-  "Version": "1.1.0",
-  "Description": "Crystal Anvil crafting bench with Crystal Sword recipe — extends the weapon tutorial",
+  "Version": "2.0.0",
+  "Description": "Crystal Anvil bench, Crystal Sword with projectile attacks, Light Charges ammo, and Crystal Light element",
   "Authors": [
     {
       "Name": "HytaleModdingManual"
@@ -13,5 +13,6 @@
     "HytaleModdingManual:CreateACustomTree": "1.0.0"
   },
   "OptionalDependencies": {},
-  "IncludesAssetPack": true
+  "IncludesAssetPack": true,
+  "TargetServerVersion": "2026.03.26-89796e57b"
 }

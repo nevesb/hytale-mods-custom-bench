@@ -1,0 +1,26 @@
+{
+  "Appearance": "Ice_Bolt",
+  "Radius": 0.2,
+  "Height": 0.2,
+  "HorizontalCenterShot": 0.2,
+  "VerticalCenterShot": 0.1,
+  "DepthShot": 1.5,
+  "PitchAdjustShot": true,
+  "SticksVertically": false,
+  "MuzzleVelocity": 55,
+  "TerminalVelocity": 60,
+  "Gravity": 2,
+  "ImpactSlowdown": 0,
+  "TimeToLive": 10,
+  "Damage": 18,
+  "DeadTimeMiss": 0,
+  "DeathEffectsOnHit": true,
+  "HitParticles": {
+    "SystemId": "Impact_Ice"
+  },
+  "DeathParticles": {
+    "SystemId": "Impact_Ice"
+  },
+  "HitSoundEventId": "SFX_Divine_Respawn",
+  "DeathSoundEventId": "SFX_Ice_Bolt_Death"
+}

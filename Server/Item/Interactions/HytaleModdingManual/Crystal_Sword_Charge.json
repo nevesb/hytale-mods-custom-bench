@@ -1,0 +1,33 @@
+{
+  "Type": "Charging",
+  "AllowIndefiniteHold": false,
+  "DisplayProgress": false,
+  "HorizontalSpeedMultiplier": 0.5,
+  "Effects": {
+    "ItemAnimationId": "StabDashCharging",
+    "Particles": [
+      {
+        "PositionOffset": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationOffset": {
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 0
+        },
+        "TargetNodeName": "blade",
+        "SystemId": "Sword_Charging",
+        "Color": "#ffffff"
+      }
+    ]
+  },
+  "Next": {
+    "0": {
+      "Type": "Simple",
+      "RunTime": 0.1
+    },
+    "0.65": "Crystal_Sword_Charged_Entry"
+  }
+}
